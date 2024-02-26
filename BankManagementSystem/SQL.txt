@@ -1,0 +1,10 @@
+create database bankmanagementsystem;
+use bankmanagementsystem;
+create table commontable(formNo text, name text, fatherName text, DOB text, gender text, email text, maritalStatus text, address text, city text, state text, pinCode int,religion text, category text, income text, eduQualification text, occupation text, panNo text, aadharNo text, seniorCitizen text, exstbg text,accountType text, cardNo text, pinNo text, facility text);
+
+create table balance(cardNo text, amount double DEFAULT 0);
+create table transactions(cardNo text,date text,type text , amount double);
+
+select * from commontable;
+select * from transactions;
+select * from balance;
